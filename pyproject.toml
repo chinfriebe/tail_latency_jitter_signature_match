@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chinfriebe-lorapeft_jd378"
+name = "chinfriebe-tail_latency_jitter_signature_match"
 version = "0.1.0"
 description = "通过字符级与结构级特征识别LoRA 与参数高效微调研究员·尾延迟抖动与首 token 时间的痕迹，给出密度与命中位置"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://chinfriebe.github.io"
-Repository = "https://github.com/chinfriebe/lorapeft_jd378"
-Issues = "https://github.com/chinfriebe/lorapeft_jd378/issues"
+Repository = "https://github.com/chinfriebe/tail_latency_jitter_signature_match"
+Issues = "https://github.com/chinfriebe/tail_latency_jitter_signature_match/issues"
 
 [project.scripts]
-lorapeft_jd378 = "lorapeft_jd378:main"
+tail_latency_jitter_signature_match = "tail_latency_jitter_signature_match:main"
 
 [tool.setuptools]
-py-modules = ["lorapeft_jd378"]
+py-modules = ["tail_latency_jitter_signature_match"]

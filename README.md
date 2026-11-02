@@ -1,11 +1,11 @@
-# lorapeft_jd378
+# tail_latency_jitter_signature_match
 
 **给LoRA 与参数高效微调研究员·尾延迟抖动与首 token 时间算一个特征指纹并定位可疑片段。**
 
-`lorapeft_jd378` —— 通过字符级与结构级特征识别LoRA 与参数高效微调研究员·尾延迟抖动与首 token 时间的痕迹，给出密度与命中位置
+`tail_latency_jitter_signature_match` —— 通过字符级与结构级特征识别LoRA 与参数高效微调研究员·尾延迟抖动与首 token 时间的痕迹，给出密度与命中位置
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`lorapeft_jd378.py` 拷走就能用
+- 单文件，`tail_latency_jitter_signature_match.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install chinfriebe-lorapeft_jd378
+pip install chinfriebe-tail_latency_jitter_signature_match
 ```
 
 装完直接用命令名调用：
 
 ```bash
-lorapeft_jd378 --help
+tail_latency_jitter_signature_match --help
 ```
 
-也可以不用安装，直接把 `lorapeft_jd378.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `tail_latency_jitter_signature_match.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ lorapeft_jd378 --help
 ## 用法
 
 ```bash
-python lorapeft_jd378.py --file input.txt
-python lorapeft_jd378.py --text "示例内容"
-python lorapeft_jd378.py --file input.txt --json
+python tail_latency_jitter_signature_match.py --file input.txt
+python tail_latency_jitter_signature_match.py --text "示例内容"
+python tail_latency_jitter_signature_match.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python lorapeft_jd378.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_lorapeft_jd378.py
+python test_tail_latency_jitter_signature_match.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_lorapeft_jd378.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/chinfriebe/lorapeft_jd378>
+- GitHub 仓库：<https://github.com/chinfriebe/tail_latency_jitter_signature_match>
 
 ---
 
@@ -79,7 +79,7 @@ python test_lorapeft_jd378.py
 chinfriebe 做LoRA 与参数高效微调研究员·尾延迟抖动与首 token 时间相关的问题，方向对标字节跳动的负责人LoRA 与参数高效微调研究员岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://chinfriebe.github.io>
-- 仓库：<https://github.com/chinfriebe/lorapeft_jd378>
+- 仓库：<https://github.com/chinfriebe/tail_latency_jitter_signature_match>
 
 ## 许可
 
